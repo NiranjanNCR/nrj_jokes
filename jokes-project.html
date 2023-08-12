@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!-- <link rel="stylesheet" href="../javascript/script.js"> -->
+<style>
+    body{
+        background-color: rgb(36, 35, 35);
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+.container{
+    background-color: rgb(143, 161, 253);
+width: 40%;
+height: 400px;
+margin-top: 150px;
+border-radius: 10px;
+}
+
+.container h3{
+    font-size: 35px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color:rgb(255, 255, 255);
+    text-align: center;
+}
+.joke{
+    text-align: center;
+    font-size: 20px;
+    color:rgb(2, 2, 8);
+}
+
+.btn{
+    text-align: center;
+    margin-top: 10%;
+    margin-left: 35%;
+    height: 50px;
+    width: 200px;
+    font-size: 30px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight:bolder;
+    border-radius:10px ;
+    border-style: none;
+}
+
+
+@media(max-width:415px)
+{
+    .container{
+        width: 20rem;
+    }
+    .btn{
+        margin-left: 4rem;
+    }
+}
+</style>
+<body>
+   <div class="container">
+       <h3>Best jokes to make Your day</h3>
+       <div id="joke" class="joke">Awesome joke is loading...</div>
+       <button id="jokebtn" class="btn">Next JOKE</button>
+   </div> 
+
+   <script src="./script.js"></script>
+</body>
+</html>
